@@ -6,18 +6,15 @@ import "./styles.css";
 export function Article(props) {
   return (
     <article id="article">
-      <img src={props.thumbnail} alt={props.title} width={250} height={250} />
+      <img src={props.thumbnail} alt={props.title} />
 
       <div className="article-infos">
         <h2> {props.title}</h2>
         <h3> {props.provider} </h3>
 
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
-          reprehenderit ea quibusdam necessitatibus similique commodi quaerat
-          accusamus consequatur deserunt recusandae corrupti, voluptatum
-          temporibus beatae totam. Consequatur voluptate quasi qui at?
-        </p>
+        <p>{props.descripton}</p>
+        <p>Link de acesso: {props.url} </p>
+        {/* <p>Publicado em: {props.published}</p> */}
       </div>
     </article>
   );

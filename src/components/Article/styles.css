@@ -15,3 +15,12 @@
   color: #8695a4;
   margin-bottom: 1rem;
 }
+
+#article .article-infos p {
+  margin-top: 1rem;
+}
+#article img {
+  max-width: 350px;
+  border-radius: 5px;
+  max-height: 350px;
+}
